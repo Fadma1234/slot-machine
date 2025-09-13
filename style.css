@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+html {
+  /* font-size: 62.5%; */
+    background-image: url(fruiii.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3% 4%;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    /* background-image: url(fruits.png);
+    background-repeat: no-repeat;
+    background-size: cover */
+}
+
+.logo {
+    width: 185px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+}
+
+.slots {
+    font-size: 4rem;
+    margin-top: -1.4rem;
+    color: #222725;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 6px #fff, 0 2px 8px #22e632;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    color: #1cb724;
+    width: 95%;
+    max-width: 500px;
+    margin: 1.8rem auto;
+    padding: 2rem 1rem 1.5rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 30px 0 rgba(31, 38, 135, 0.18);
+    border: 2px solid #0a9d14;
+}
+
+.sen {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #388e3c;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.reels {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
+    gap: 1rem;
+}
+.reel1, .reel2, .reel3 {
+    width: 35%;
+    background: #fffbe7;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(230, 126, 34, 0.15);
+    padding: 0.5rem;
+    border: 2px solid #2e8d05aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95px;
+    transition: transform 0.1s;
+}
+.reels img {
+    width: 90%;
+    max-width: 80px;
+    transition: transform 0.2s;
+}
+
+button {
+ 
+    padding: 0.7em 2em;
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, #0b6f09 60%, #12b31f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 0.7rem;
+    margin: 0 1.5rem;
+    box-shadow: 0 2px 7px rgba(230, 126, 34, 0.15);
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+ 
+#spin-button {
+  display: flex;
+    padding-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: #07370a;
+    letter-spacing: 1px;
+}
+
+.coins {
+    font-size: 1.7rem;
+    color: #388e3c;
+    font-weight: bold;
+    background: #fffbe7;
+    padding: 0.2em 0.7em;
+    border-radius: 0.5em;
+    border: 2px solid #2dc281;
+    margin-left: 0.5em;
+    box-shadow: 0 2px 8px rgba(56, 142, 60, 0.08);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 1rem 0.3rem;
+    }
+    .reels {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .reel1, .reel2, .reel3 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .logo {
+        width: 90%;
+    }
+}
