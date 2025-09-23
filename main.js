@@ -11,6 +11,7 @@
  //if coins are 0 disable both buttons 
  //add sound effects for both buttons and wining
  //add a reset button to reset the game 
+ //used code from https://github.com/xsarahyu/GOT-slot-machine/blob/answer/js/main.js
 
 let sen = document.querySelector(".sen")
 
@@ -31,12 +32,14 @@ let reel1 = document.querySelector(".reel1")
 let reel2 = document.querySelector(".reel2")
 let reel3 = document.querySelector(".reel3")
 
+ //used code from https://github.com/xsarahyu/GOT-slot-machine/blob/answer/js/main.js
+
 let coins = document.querySelector(".coins")
 coins.innerText = 1000
 
 document.querySelector(".small").addEventListener("click", smallSpin)
 document.querySelector(".big").addEventListener("click", bigSpin)
-
+//deleted and rewrited on my own
 function smallSpin() {
     if (coins.innerText >= 5) {
         coins.innerText = Number(coins.innerText) - 5
@@ -57,6 +60,8 @@ function smallSpin() {
         document.querySelector("h2").innerText = "out of coins"
     }
 }
+
+ //used code from https://github.com/xsarahyu/GOT-slot-machine/blob/answer/js/main.js
 
 function bigSpin() {
     if (coins.innerText >= 50) {
